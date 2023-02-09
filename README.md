@@ -27,6 +27,7 @@ curl --silent ipaddr:31410  | grep title
 kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 
 **Delete amazon-vpc-cni-k8s Daemonset**
+
 kubectl delete ds aws-node -n kube-system
 
 **Apply Network Policy**
